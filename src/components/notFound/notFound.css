@@ -1,0 +1,14 @@
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.notFound a {
+  margin: 30px 0;
+  background: blueviolet;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+}

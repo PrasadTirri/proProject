@@ -1,0 +1,54 @@
+.profileModal {
+  box-shadow: 5px 5px 30px 5px #00000010, -5px -5px 30px 5px #00000010;
+  padding: 30px;
+  border-radius: 30px;
+  position: absolute;
+  width: 320px;
+  top: 100%;
+  right: 10%;
+  transform: translateX(-5%);
+  background: white;
+  display: none;
+}
+.profileModal.active {
+  display: block;
+}
+.profileModal .activeUserProfile {
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activeUserProfile .userName {
+  margin-top: 10px;
+}
+.activeUserProfile .userEmail {
+  color: gray;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.profileModal .users {
+  height: 120px;
+  padding: 0;
+}
+.signOut {
+  padding: 20px 0;
+  text-align: center;
+}
+.signOutBtn {
+  background: #d55151;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media only screen and (max-width: 750px) {
+  .profileModal {
+    right: -10%;
+  }
+}

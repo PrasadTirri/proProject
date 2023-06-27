@@ -1,0 +1,68 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.name {
+  width: 100px;
+  height: 10px;
+  background-color: #ccc;
+}
+
+
+.skeleton .avatar,
+.skeleton .name {
+  background-color: #ddd;
+  animation: skeleton-pulse 1s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00000081;
+}
+
+.load::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid #ccc;
+  border-top-color: #7411f5;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

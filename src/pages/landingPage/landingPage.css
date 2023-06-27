@@ -1,0 +1,67 @@
+.landingPage {
+  max-height: 100vh;
+  background-image: url("../../assests/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.usersContainer {
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 2px #0000000d, -5px -5px 5px 2px #0000000d;
+  min-width: 600px;
+  background: white;
+  overflow: hidden;
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+
+.title {
+  background: #f6f6f6;
+  color: #545454;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.users-wrapper {
+  padding: 0px 10px 30px 10px;
+}
+.users {
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 420px;
+  overflow-y: scroll;
+}
+.users a {
+  text-decoration: none;
+  color: black;
+}
+.users li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 0.5px solid #cccccc;
+  align-items: center;
+}
+.users li img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.users::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.users::-webkit-scrollbar-thumb {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 750px) {
+  .usersContainer {
+    min-width: 90vw;
+  }
+}

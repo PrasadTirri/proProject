@@ -1,0 +1,99 @@
+.profileContent {
+  padding: 30px 0;
+  display: flex;
+  width: 100%;
+  color: #545454;
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+.userDetails {
+  flex: 1;
+  border-right: 0.5px solid #d0cfcf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 40px;
+  justify-content: center;
+}
+.userAddress {
+  flex: 2;
+  padding-left: 50px;
+}
+.personalDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 40px;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 0.5px #d0cfcf solid;
+}
+.personalDetails img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.detail {
+  margin: 5px 0;
+  display: flex;
+}
+.label {
+  display: inline-block;
+  width: 110px;
+  text-align: right;
+  margin-right: 10px;
+  color: #989898;
+}
+
+.value {
+  vertical-align: top;
+  font-weight: 700;
+}
+
+.companyDetails p {
+  color: #989898;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.userAddress p {
+  color: #989898;
+}
+.map {
+  margin-top: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.map iframe {
+  border: none;
+}
+.latLongDetails {
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+.latLongDetails span {
+  color: #989898;
+}
+.latLongDetails p {
+  font-weight: bold;
+  color: #545454;
+}
+
+@media only screen and (max-width: 750px) {
+  .userAddress {
+    margin-top: 20px;
+    border-top: 0.5px solid gray;
+    padding: 0;
+  }
+  .userAddress p {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
